@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 li {
@@ -11,7 +12,6 @@ li {
 .container {
     display: flex;
     max-width: 1660px;
-    /* margin: 0 auto; */
 }
 
 .sidebar {
@@ -19,7 +19,17 @@ li {
     color: #fff;
     padding: 48px;
     width: 285px;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.stick {
+    position: fixed;
 }
 
 .logo-container {
@@ -138,4 +148,170 @@ li {
     width: 2px;
     background-color: #bdbdbd;
     align-self: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 105px 0 72px 115px;
+    gap: 140px;
+}
+
+.profile-heading {
+    margin-bottom: 55px;
+}
+
+.profile-heading h6 {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.profile-heading h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.profile-content img {
+    margin-bottom: 50px;
+}
+
+/* .profile-information {
+    justify-self: flex-end;
+} */
+
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px
+}
+
+.profile-title h1 {
+    font-size: 48px;
+}
+
+.profile-title p {
+    font-size: 24px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.information-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 36px;
+    row-gap: 35px;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 340px;
+    column-gap: 12px;
+}
+
+.information img {
+    background-color: #F3F3F3;
+    border-radius: 100%;
+    padding: 12px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 285px);
+}
+
+.about-wrapper {
+    padding-top: 50px;
+    display: flex;
+    margin-bottom: 78px;
+}
+
+.about-content {
+    width: 315px;
+}
+
+.about-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.about-title h1 {
+    font-size: 48px;
+}
+
+.about-title h4 {
+    font-size: 18px;
+}
+
+.about-title p {
+    font-size: 18px;
+}
+
+.quote {
+    background-color: #141313;
+    color: #fff;
+    padding: 42px;
+    font-size: 20px;
+}
+
+.experience {
+    padding: 120px 115px;
+    display: flex;
+    gap: 145px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(190, 86, 86, 1) 70%, rgba(252, 176, 69, 1) 100%);
+    ;
+    color: #fff;
+}
+
+.experience-wrapper {
+    width: 440px;
+}
+
+.experience-wrapper h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.experience-wrapper h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.experience-wrapper p {
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.experience-wrapper input {
+    padding: 16px 40px;
+    background-color: #141313;
+    color: #F3F3F3;
+    border-style: none;
+    font-size: 18px;
+}
+
+.timeline-content {
+    width: 550px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F3F3F3;
+    margin-bottom: 40px;
+}
+
+.timeline-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.timeline-content h4 {
+    font-size: 32px;
 }
